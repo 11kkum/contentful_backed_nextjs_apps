@@ -3,9 +3,12 @@ import Head from 'next/head'
 import Post from '../components/post'
 
 const client = require('contentful').createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 })
+
+console.log(space);
+console.log(accessToken);
 
 function HomePage() {
   async function fetchEntries() {
