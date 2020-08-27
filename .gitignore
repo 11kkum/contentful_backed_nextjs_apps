@@ -1,2 +1,10 @@
 .env
+.env.build
+/.next
+/.vercel
+/.vscode
 node_modules
+imageAPI.js
+package.json
+package-lock.json
+vercel.json

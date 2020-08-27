@@ -1,9 +1,12 @@
+import Link from 'next/link'
+
 function Post({ alt, date, image, title, url }) {
     return (
       <div className="container">
-        <a href={url}>
+        Click{' '}
+        <Link href="../pages/about.js" passHref>
           <img alt={alt} src={image} />
-        </a>
+        </Link>{' '}
         <div className="text">
           <h2>{title}</h2>
           <h4>{date}</h4>
@@ -40,5 +43,5 @@ function Post({ alt, date, image, title, url }) {
       </div>
     )
   }
-  
+
   export default Post
