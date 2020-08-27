@@ -1,1 +1,1 @@
-contenfulのAPIは隠しています。
+contentfulのAPIは隠しています。
